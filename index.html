@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shree Ji Events offers complete wedding and event solutions in Surajgarh, Jhunjhunu: tent, catering, DJ, lighting, stage decoration, couple entry and more." />
+  <meta name="keywords" content="Shree Ji Events, wedding planner Surajgarh, tent house Jhunjhunu, catering, DJ, light decoration, wedding decoration Rajasthan" />
+  <meta name="theme-color" content="#7a4a14" />
+  <meta property="og:title" content="Shree Ji Events | Complete Wedding & Event Solutions" />
+  <meta property="og:description" content="Turning Your Dreams Into Grand Celebrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shreejieventsraj.in/" />
+  <title>Shree Ji Events | Wedding & Event Solutions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --gold:#c59a52;
+      --gold2:#e4c485;
+      --dark:#17110c;
+      --cream:#fffaf2;
+      --muted:#6c6259;
+      --white:#fff;
+      --shadow:0 18px 50px rgba(42,26,10,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6}
+    img{width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1160px,92%);margin:auto}
+    .topbar{background:var(--dark);color:#f8ead5;text-align:center;padding:8px 12px;font-size:13px}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,250,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(197,154,82,.2)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Cinzel;font-weight:700;color:var(--gold);background:#fff}
+    .brand strong{display:block;font-family:Cinzel;font-size:18px}
+    .brand small{display:block;color:var(--muted);font-size:11px}
+    .links{display:flex;gap:24px;align-items:center;font-weight:600;font-size:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;font-weight:700;border:1px solid transparent;cursor:pointer}
+    .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#25170a;box-shadow:0 10px 25px rgba(197,154,82,.3)}
+    .btn-outline{border-color:rgba(255,255,255,.55);color:#fff}
+    .menu{display:none;font-size:26px;background:none;border:0}
+    .hero{min-height:84vh;display:grid;place-items:center;color:#fff;position:relative;background:
+      linear-gradient(90deg,rgba(15,10,7,.86),rgba(15,10,7,.42)),
+      url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-content{padding:90px 0;max-width:760px}
+    .eyebrow{letter-spacing:.22em;text-transform:uppercase;color:#f0d8aa;font-weight:700;font-size:13px}
+    h1,h2,h3{font-family:Cinzel,serif;line-height:1.2}
+    h1{font-size:clamp(42px,7vw,78px);margin:14px 0}
+    .hero p{font-size:clamp(17px,2.2vw,22px);max-width:650px;color:#f6ede4}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    section{padding:88px 0}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+    .section-head span{color:#9b6a28;font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:12px}
+    .section-head h2{font-size:clamp(32px,5vw,50px);margin:10px 0}
+    .section-head p{color:var(--muted)}
+    .grid{display:grid;gap:22px}
+    .services{grid-template-columns:repeat(3,1fr)}
+    .card{background:#fff;border:1px solid rgba(197,154,82,.18);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    .icon{font-size:34px;margin-bottom:12px}
+    .card h3{margin:6px 0 8px;font-size:21px}
+    .card p{color:var(--muted);margin:0}
+    .stats{background:var(--dark);color:#fff}
+    .stats-grid{grid-template-columns:repeat(4,1fr);text-align:center}
+    .stat strong{font-size:38px;color:var(--gold2);font-family:Cinzel}
+    .stat span{display:block;color:#d9cfc5}
+    .gallery{grid-template-columns:2fr 1fr 1fr;grid-auto-rows:270px}
+    .gallery figure{margin:0;border-radius:20px;overflow:hidden;position:relative}
+    .gallery img{height:100%;object-fit:cover;transition:.5s}
+    .gallery figure:hover img{transform:scale(1.05)}
+    .gallery figure:first-child{grid-row:span 2}
+    .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700}
+    .packages{grid-template-columns:repeat(3,1fr)}
+    .package{position:relative}
+    .package.popular{border:2px solid var(--gold);transform:translateY(-10px)}
+    .badge{position:absolute;right:18px;top:18px;background:var(--gold);padding:6px 10px;border-radius:999px;font-size:11px;font-weight:800}
+    .price{font-size:30px;font-family:Cinzel;color:#9b6a28;margin:12px 0}
+    .package ul{padding-left:20px;color:var(--muted)}
+    .calc-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    label{font-weight:700;font-size:14px}
+    input,select,textarea{width:100%;margin-top:7px;padding:14px;border:1px solid #dbc9ad;border-radius:12px;background:#fff;font:inherit}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .estimate{background:var(--dark);color:#fff;display:flex;flex-direction:column;justify-content:center}
+    .estimate strong{font-family:Cinzel;font-size:38px;color:var(--gold2)}
+    .reviews{grid-template-columns:repeat(3,1fr)}
+    .stars{color:#d59b24;letter-spacing:3px}
+    .review p{font-style:italic;color:var(--muted)}
+    details{background:#fff;border:1px solid rgba(197,154,82,.22);border-radius:14px;padding:18px 20px;margin:12px 0}
+    summary{font-weight:800;cursor:pointer}
+    .contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px}
+    .contact-info{background:var(--dark);color:#fff}
+    .contact-info p{color:#ded3c8}
+    footer{background:#0d0906;color:#cfc6bd;padding:34px 0;text-align:center}
+    .floating{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:white;font-size:28px;box-shadow:0 12px 30px rgba(0,0,0,.25);z-index:50}
+    @media(max-width:900px){
+      .links{display:none}.menu{display:block}
+      .services,.packages,.reviews{grid-template-columns:1fr 1fr}
+      .stats-grid{grid-template-columns:1fr 1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .gallery figure:first-child{grid-row:span 1;grid-column:span 2}
+      .calc-wrap,.contact{grid-template-columns:1fr}
+    }
+    @media(max-width:620px){
+      section{padding:64px 0}
+      .services,.packages,.reviews{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr;grid-auto-rows:230px}
+      .gallery figure:first-child{grid-column:span 1}
+      .form-grid{grid-template-columns:1fr}
+      .hero{min-height:78vh}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Complete Wedding & Event Solutions • Surajgarh, Jhunjhunu, Rajasthan</div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <div class="logo">SJ</div>
+        <div><strong>Shree Ji Events</strong><small>Turning Dreams Into Celebrations</small></div>
+      </a>
+      <nav class="links">
+        <a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="btn btn-gold" href="https://wa.me/918104337032?text=Namaste%20Shree%20Ji%20Events,%20mujhe%20event%20booking%20ke%20liye%20quote%20chahiye." target="_blank">WhatsApp Booking</a>
+      </nav>
+      <button class="menu" aria-label="Open menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Shree Ji Events • Rajasthan</div>
+          <h1>Grand Celebrations, Beautiful Memories.</h1>
+          <p>Wedding decoration, tent, catering, DJ, lighting, stage setup, couple entry and complete event management—all under one trusted name.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact">Get Free Quote</a>
+            <a class="btn btn-outline" href="tel:+918104337032">Call 81043 37032</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><span>Our Services</span><h2>Everything Your Celebration Needs</h2><p>From a simple family function to a grand wedding, our team manages every detail with care.</p></div>
+        <div class="grid services">
+          <div class="card"><div class="icon">🎪</div><h3>Tent & Banquet Setup</h3><p>Premium tents, seating, carpets, banquet chairs, tables and complete venue setup.</p></div>
+          <div class="card"><div class="icon">🌸</div><h3>Wedding Decoration</h3><p>Rajwadi, floral, pastel, white-gold, traditional and modern decoration themes.</p></div>
+          <div class="card"><div class="icon">🍽️</div><h3>Catering</h3><p>Elegant food counters, crockery, service team and customised vegetarian menus.</p></div>
+          <div class="card"><div class="icon">🎧</div><h3>DJ & Sound</h3><p>High-quality DJ sound, dance floor, music setup and event announcements.</p></div>
+          <div class="card"><div class="icon">💡</div><h3>Lighting & LED</h3><p>Decorative lights, stage lighting, entry lighting, sharpy lights and LED wall.</p></div>
+          <div class="card"><div class="icon">💑</div><h3>Couple Entry</h3><p>Fog entry, LED gallery, cold pyro effects and memorable bride-groom entrances.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container grid stats-grid">
+        <div class="stat"><strong>800+</strong><span>Guest Setup Capacity</span></div>
+        <div class="stat"><strong>10+</strong><span>Event Services</span></div>
+        <div class="stat"><strong>100%</strong><span>Custom Planning</span></div>
+        <div class="stat"><strong>24×7</strong><span>Booking Support</span></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head"><span>Gallery</span><h2>Celebrations We Love Creating</h2><p>Premium looks, thoughtful details and picture-perfect moments.</p></div>
+        <div class="grid gallery">
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=80" alt="Wedding decoration"><figcaption>Grand Wedding Decor</figcaption></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80" alt="Wedding stage"><figcaption>Elegant Stage</figcaption></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Event table setup"><figcaption>Banquet Setup</figcaption></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Event lighting"><figcaption>Lighting & DJ</figcaption></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=80" alt="Floral wedding decoration"><figcaption>Floral Themes</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-head"><span>Packages</span><h2>Flexible Plans for Every Event</h2><p>Final pricing depends on guest count, menu, venue, theme and selected services.</p></div>
+        <div class="grid packages">
+          <div class="card package"><h3>Essential</h3><div class="price">Custom Quote</div><ul><li>Basic tent & seating</li><li>Simple stage decoration</li><li>Standard lighting</li><li>Event support team</li></ul><a class="btn btn-gold" href="#contact">Ask Price</a></div>
+          <div class="card package popular"><span class="badge">MOST POPULAR</span><h3>Royal Wedding</h3><div class="price">Custom Quote</div><ul><li>Premium decoration theme</li><li>DJ, lighting & dance floor</li><li>Catering setup & crockery</li><li>Couple entry effects</li></ul><a class="btn btn-gold" href="#contact">Ask Price</a></div>
+          <div class="card package"><h3>Grand Celebration</h3><div class="price">Custom Quote</div><ul><li>Complete event management</li><li>LED wall & premium effects</li><li>Luxury stage and entrance</li><li>Dedicated coordination team</li></ul><a class="btn btn-gold" href="#contact">Ask Price</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container calc-wrap">
+        <div>
+          <div class="section-head" style="text-align:left;margin:0 0 24px"><span>About Us</span><h2>Local Trust. Premium Execution.</h2></div>
+          <p>Shree Ji Events provides complete wedding and event solutions in Surajgarh and nearby areas of Jhunjhunu. We bring tent, catering, DJ, decoration, lighting and special entries together so families can enjoy their celebration without managing multiple vendors.</p>
+          <p>Our focus is simple: beautiful setup, timely service, transparent planning and a memorable experience for every guest.</p>
+        </div>
+        <div class="card estimate">
+          <span class="eyebrow">Quick Estimate</span>
+          <h3>Plan Your Event</h3>
+          <p>Select your guest count and event type. We will prepare a customised quote.</p>
+          <strong id="estimateText">Custom Quote</strong>
+          <a class="btn btn-gold" style="margin-top:18px" href="#contact">Start Planning</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head"><span>Client Love</span><h2>What Families Value Most</h2></div>
+        <div class="grid reviews">
+          <div class="card review"><div class="stars">★★★★★</div><p>“Beautiful decoration, disciplined team and smooth coordination throughout the function.”</p><strong>Wedding Client</strong></div>
+          <div class="card review"><div class="stars">★★★★★</div><p>“DJ, lighting and stage setup looked premium. Guests appreciated the arrangements.”</p><strong>Family Event Client</strong></div>
+          <div class="card review"><div class="stars">★★★★★</div><p>“One team handled multiple services, which made planning much easier for us.”</p><strong>Celebration Client</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head"><span>FAQ</span><h2>Common Booking Questions</h2></div>
+        <details><summary>How early should we book?</summary><p>For wedding season, booking 2–4 months in advance is recommended. Smaller functions may be possible at shorter notice, subject to availability.</p></details>
+        <details><summary>Do you provide services outside Surajgarh?</summary><p>Yes. Nearby locations in Jhunjhunu district and surrounding areas can be covered depending on the event requirements.</p></details>
+        <details><summary>Can we select only one service?</summary><p>Yes. You may book tent, decoration, catering, DJ, lighting or couple entry separately, or choose a complete package.</p></details>
+        <details><summary>How is the final price decided?</summary><p>Pricing depends on date, venue, guest count, decoration theme, menu and selected equipment or effects.</p></details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <div class="card contact-info">
+          <span class="eyebrow">Contact</span>
+          <h2>Let’s Plan Your Celebration</h2>
+          <p><strong>Shree Ji Events</strong><br>Surajgarh, Jhunjhunu, Rajasthan</p>
+          <p>Phone / WhatsApp:<br><a href="tel:+918104337032"><strong>+91 81043 37032</strong></a></p>
+          <p>Website:<br><strong>shreejieventsraj.in</strong></p>
+        </div>
+        <form class="card" onsubmit="sendWhatsApp(event)">
+          <h3>Get a Free Quote</h3>
+          <div class="form-grid">
+            <label>Your Name<input id="name" required placeholder="Full name"></label>
+            <label>Phone Number<input id="phone" required inputmode="numeric" placeholder="10-digit mobile"></label>
+            <label>Event Type<select id="event"><option>Wedding</option><option>Engagement</option><option>Birthday</option><option>Corporate Event</option><option>Other Function</option></select></label>
+            <label>Guest Count<input id="guests" type="number" min="20" placeholder="e.g. 500"></label>
+          </div>
+          <label>Event Date<input id="date" type="date"></label>
+          <label>Required Services<textarea id="message" rows="4" placeholder="Tent, catering, DJ, decoration, lighting..."></textarea></label>
+          <button class="btn btn-gold" type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating" href="https://wa.me/918104337032?text=Namaste%20Shree%20Ji%20Events,%20mujhe%20event%20booking%20ke%20liye%20details%20chahiye." target="_blank" aria-label="Chat on WhatsApp">✆</a>
+
+  <footer><div class="container">© <span id="year"></span> Shree Ji Events. All rights reserved.</div></footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function sendWhatsApp(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const phone=document.getElementById('phone').value;
+      const event=document.getElementById('event').value;
+      const guests=document.getElementById('guests').value || 'Not specified';
+      const date=document.getElementById('date').value || 'Not specified';
+      const msg=document.getElementById('message').value || 'Please suggest complete package';
+      const text=`Namaste Shree Ji Events,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEvent: ${encodeURIComponent(event)}%0AGuests: ${encodeURIComponent(guests)}%0ADate: ${encodeURIComponent(date)}%0AServices: ${encodeURIComponent(msg)}%0A%0APlease share a quote.`;
+      window.open(`https://wa.me/918104337032?text=${text}`,'_blank');
+    }
+  </script>
+</body>
+</html>
